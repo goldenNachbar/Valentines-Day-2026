@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentines Day</title>
+    <!-- Favicon - Multiple formats for best compatibility -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="alternate icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💝</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>💝</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="countdown.js"></script>
+</head>
+<body>
+    <!-- Animated LED Heart Background -->
+    <div class="led-heart">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path d="M100,170 
+                     C100,170 40,120 40,80 
+                     C40,60 50,40 70,40 
+                     C85,40 95,50 100,60 
+                     C105,50 115,40 130,40 
+                     C150,40 160,60 160,80 
+                     C160,120 100,170 100,170 Z" />
+        </svg>
+    </div>
+
+    <!-- Floating Hearts Background Animation -->
+    <div class="floating-hearts">
+        <div class="heart heart-1">♥</div>
+        <div class="heart heart-2">♥</div>
+        <div class="heart heart-3">♥</div>
+        <div class="heart heart-4">♥</div>
+        <div class="heart heart-5">♥</div>
+        <div class="heart heart-6">♥</div>
+        <div class="heart heart-7">♥</div>
+        <div class="heart heart-8">♥</div>
+        <div class="heart heart-9">♥</div>
+        <div class="heart heart-10">♥</div>
+    </div>
+
+    <div class="container">
+        <header>
+            <h1 class="main-title">Valentines Day</h1>
+            <p class="subtitle">Mein persönliches Geschenk an dich!</p>
+        </header>
+
+        <nav class="tab-navigation">
+            <button class="tab-btn" data-tab="morning">
+                <span class="tab-icon">🌅</span>
+                <span class="tab-label">Kapitel 1</span>
+            </button>
+            <button class="tab-btn" data-tab="daytime">
+                <span class="tab-icon">☀️</span>
+                <span class="tab-label">Kapitel 2</span>
+            </button>
+            <button class="tab-btn" data-tab="evening">
+                <span class="tab-icon">🌆</span>
+                <span class="tab-label">Kapitel 3</span>
+            </button>
+            <button class="tab-btn" data-tab="night">
+                <span class="tab-icon">🌙</span>
+                <span class="tab-label">Kapitel 4</span>
+            </button>
+        </nav>
+
+        <main class="content-area">
+            <!-- Morning Tab -->
+            <section class="tab-content" id="morning" data-locked="true">
+                <div class="locked-overlay">
+                    <div class="lock-icon">🔒</div>
+                    <p>Mit welchem Tier verbinde ich dich?</p>
+                    <button class="unlock-btn" data-unlock="morning">Entsperren</button>
+                </div>
+                <div class="content-inner">
+                    <h2 class="moment-title">Kapitel 1</h2>
+                    <div class="image-container">
+                        <img src="assets/images/ben_farbe.png" alt="Morgen Moment" class="moment-image">
+                    </div>
+                    <p class="moment-text">
+                        "Wo Liebe ist, wird das Unmögliche möglich." - Buddha
+                    </p>
+                    <div class="audio-player">
+                        <button class="play-btn" data-audio="morning">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon">❚❚</span>
+                        </button>
+                        <span class="audio-label">Audio abspielen</span>
+                    </div>
+                    <audio class="audio-element" data-track="morning">
+                        <source src="assets/audio/part1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </section>
+
+            <!-- Daytime Tab -->
+            <section class="tab-content" id="daytime" data-locked="true">
+                <div class="locked-overlay">
+                    <div class="lock-icon">🔒</div>
+                    <p>Nachdem wir uns so oft mit Kosenamen ansprechen, kennst du noch meinen richtigen Namen?</p>
+                    <button class="unlock-btn" data-unlock="daytime">Entsperren</button>
+                </div>
+                <div class="content-inner">
+                    <h2 class="moment-title">Kapitel 2</h2>
+                    <div class="image-container">
+                        <img src="assets/images/steffi.png" alt="Tag Moment" class="moment-image">
+                    </div>
+                    <p class="moment-text">
+                        "In der Liebe zählt nicht, wie viel man gibt, sondern wie viel Liebe man hineinlegt." - Mutter Theresa
+                    </p>
+                    <div class="audio-player">
+                        <button class="play-btn" data-audio="daytime">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon">❚❚</span>
+                        </button>
+                        <span class="audio-label">Audio abspielen</span>
+                    </div>
+                    <audio class="audio-element" data-track="daytime">
+                        <source src="assets/audio/part2.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </section>
+
+            <!-- Evening Tab -->
+            <section class="tab-content" id="evening" data-locked="true">
+                <div class="locked-overlay">
+                    <div class="lock-icon">🔒</div>
+                    <p>Wo haben wir uns IC das erste mal getroffen?</p>
+                    <button class="unlock-btn" data-unlock="evening">Entsperren</button>
+                </div>
+                <div class="content-inner">
+                    <h2 class="moment-title">Kapitel 3</h2>
+                    <div class="image-container">
+                        <img src="assets/images/gray.png" alt="Abend Moment" class="moment-image">
+                    </div>
+                    <p class="moment-text">
+                        "Es gibt keinen Zauber, der stärker ist als die Liebe." - Friedrich von Schiller
+                    </p>
+                    <div class="audio-player">
+                        <button class="play-btn" data-audio="evening">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon">❚❚</span>
+                        </button>
+                        <span class="audio-label">Audio abspielen</span>
+                    </div>
+                    <audio class="audio-element" data-track="evening">
+                        <source src="assets/audio/part3.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </section>
+
+            <!-- Night Tab -->
+            <section class="tab-content" id="night" data-locked="true">
+                <div class="locked-overlay">
+                    <div class="lock-icon">🔒</div>
+                    <p>Bist du ein gutes oder böses Mädchen?</p>
+                    <button class="unlock-btn" data-unlock="night">Entsperren</button>
+                </div>
+                <div class="content-inner">
+                    <h2 class="moment-title">Kapitel 4</h2>
+                    <div class="image-container">
+                        <img src="assets/images/bolder.png" alt="Nacht Moment" class="moment-image">
+                    </div>
+                    <p class="moment-text">
+                        "Wo Liebe wächst, gedeiht Leben." - Mahatma Gandhi
+                    </p>
+                    <div class="audio-player">
+                        <button class="play-btn" data-audio="night">
+                            <span class="play-icon">▶</span>
+                            <span class="pause-icon">❚❚</span>
+                        </button>
+                        <span class="audio-label">Audio abspielen</span>
+                    </div>
+                    <audio class="audio-element" data-track="night">
+                        <source src="assets/audio/part4.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Password Modal -->
+    <div class="modal" id="passwordModal">
+        <div class="modal-content">
+            <h3 class="modal-title">Passwort eingeben</h3>
+            <p class="modal-hint">Schalte diesen Moment frei...</p>
+            <input type="password" id="passwordInput" class="password-input" placeholder="•••••">
+            <div class="modal-buttons">
+                <button class="btn btn-submit" id="submitPassword">Freischalten</button>
+                <button class="btn btn-cancel" id="cancelPassword">Abbrechen</button>
+            </div>
+            <p class="error-message" id="errorMessage"></p>
+        </div>
+    </div>
+
+    <!-- Secret Message Modal -->
+    <div class="secret-modal" id="secretModal">
+        <div class="secret-content">
+            <p class="secret-text" id="secretText"></p>
+            <button class="btn btn-close" id="closeSecret">✕</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
